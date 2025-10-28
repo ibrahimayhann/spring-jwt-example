@@ -1,33 +1,37 @@
-HELP.md
+# Build klasörleri
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# IDE dosyaları
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Log dosyaları
+*.log
+
+# Gerçek ayar dosyalarını gizle
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
+# Anahtar / sertifika dosyaları
+*.jks
+*.p12
+*.pem
+*.key
+
+# OS / sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Maven / Gradle wrapper dosyaları
+.mvn/
+!mvnw
+!mvnw.cmd
+
+# Test çıktıları
+/test-output/
